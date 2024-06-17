@@ -1,0 +1,192 @@
+:root{
+    --width-circle: 150vw;
+    --radius: calc(100vw / 6);
+    --black: #000;
+}
+.contentimg {
+    background-color: #141414;
+}
+.menus{
+    width: 100vw;
+    height: 88vh;
+    overflow: hidden; 
+    position: relative;
+    margin-top: -20px;
+}
+.menus .list{
+    position: relative;
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: transform 0.8s;
+    pointer-events:none;
+}
+.menus .list .item{
+    width: calc(var(--radius) * 2);
+    text-align: center;
+    transform: rotate(45deg);
+    transition: transform 1s;
+}
+.menus .list .item.active{
+    transform: rotate(0deg);
+}
+.menus .list .item img{
+    width: 90%;
+    filter: drop-shadow(0 0 20px #000);
+}
+.menus .list .item div{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    opacity: 0;
+}
+.menus .list .item.item.active div{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    opacity: 1;
+    transition: 1.5s ease-out;
+}
+.menus .content{
+    position: relative;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #eee;
+    width: max-content;
+}
+.menus .content div:nth-child(2){
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: bold;
+    position: relative;
+}
+.menus .content div:nth-child(2)::before{
+    position: relative;
+    left: 60%;
+    bottom: 50%;
+    width: 80px;
+    height: 80px;
+    content: '';
+    background-image: url(img/leaves.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menus .content div:nth-child(1){
+    text-align: left;
+    text-transform: uppercase;
+    transform: translateY(20px);
+}
+.menus .content button{
+    border: 1px solid #eee5;
+    background: transparent;
+    color: #eee;
+    font-family: Poppins;
+    letter-spacing: 5px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+#prev,
+#next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #eee9;
+    background-color: #eee5;
+    color: #eee;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 15;
+}
+#prev{
+    left: 50px;
+}
+#next{
+    right: 50px;
+}
+.hidden {
+    display: none;
+}
+.menu-content{
+    width: 100%;
+    height: 100%;
+}
+/* Ortak stiller */
+.item-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #8b2323;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.item-slider .items {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff1cf;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.item-slider .items img {
+    max-width: 300%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#m1.items:nth-child(odd),
+#m2.items:nth-child(odd),
+#m3.items:nth-child(odd) {
+    margin-right: 12px;
+}
+  
+#m1.items:nth-child(even),
+#m2.items:nth-child(even),
+#m3.items:nth-child(even) {
+    margin-left: 12px;
+}
+.item-name{
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 32px;
+}
+.information{
+    color: var(--black);
+    font-weight:normal;
+    font-size: 16px;
+}
+
+.itemPrice{
+    color: var(--black);
+    font-weight: bold;
+    font-size: 22px;
+}
+.payBtn{
+    background-color: lightgrey;
+  color: #000;
+  border: 2px solid #8b2323;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 10px;
+}
+.payBtn:hover{
+    background-color: #000;
+  color: #fff;
+}
+.payBtn:active{
+    background-color: lightgrey;
+    color: #000;
+}

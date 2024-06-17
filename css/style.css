@@ -1,0 +1,214 @@
+:root {
+    --blue: #3586ff;
+    --bgreen: #4CAF50;
+    --white: #fff;
+    --black: #000;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    color: var(--white);
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    margin: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner {
+    color: var(--white);
+    padding: 20px;
+    width: 100%;
+    height: 7.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.banner .logo {
+    margin-left: 47%;
+}
+.banner .logo h3 {
+    font-family: 'Muli', sans-serif;
+    font-weight:100;
+    text-transform:uppercase;
+    font-size:40px;
+    color: var(--white);
+    line-height:0.3;
+}
+.banner .logo a {
+    text-decoration: none;
+}
+
+.banner .logo p {
+    color: var(--white);
+    background:#e74c3c;
+    margin-top: -40px;
+}
+
+.content {
+    min-height: 57vh;
+    min-width: 100vh;
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    flex-grow: 1;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+footer {
+    height: 15vh;
+    width: 100%;
+    position: relative;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 100px;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 20px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: var(--white);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .Boxbtn{
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    width: 35px;
+    height: 100vh;
+    background-color: #111;
+    margin-left: 0px;
+    z-index: 6;
+    padding: 0;
+    transition: 0.5s;
+  }
+  .Boxbtn a,
+  .mainBtn{
+    position: fixed;
+    display: flex;
+    width: 35px;
+    height: 45px;
+    font-size: 60px;
+    z-index: 6;
+    margin-top: 22vh;
+  }
+  .Boxbtn.active {
+    margin-left: 222px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: var(--bgreen);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.cart-icon {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #8b2323;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.cart-icon a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.cart-icon a ion-icon {
+  font-size: 24px;
+}
+.cart-icon:hover {
+  background-color: #d63535;
+  width: 60px;
+  height: 60px;
+  transition: 0.3s;
+}
+
+
+
+
+

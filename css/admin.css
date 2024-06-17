@@ -1,0 +1,58 @@
+
+.table-container {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.table-container h2 {
+    margin-bottom: 5px;
+    margin: 0px;
+}
+.table-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+.table-container li {
+    margin-bottom: 5px;
+}
+.table-container li a{
+    height: 200px;
+    width: 200px;
+}
+.table-link {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    width: 600px;
+    height: 700px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-radius: 15px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ionicon{
+    font-size: 36px;
+}

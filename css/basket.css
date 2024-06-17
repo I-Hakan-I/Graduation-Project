@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.mainBox {
+  width: 60%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 4%;
+}
+
+.cardInfo {
+  width: 35%;
+  height: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 50px;
+  margin-left: -100px;
+  margin-top: 10%;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items li span {
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  display: inline;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"], button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+}
+.month,
+.year,
+.cvv-input{
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.month{
+  width: calc(20% - 20px);
+  float: right;
+  margin-right: 10%;
+}
+.year{
+  width: calc(15% - 25px);
+  float: right;
+  margin-right: 5%;
+}
+.cvv-input{
+  width: calc(35% - 30px);
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.cvv-details{
+  font-size: small;
+}
