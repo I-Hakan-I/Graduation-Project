@@ -1,5 +1,0 @@
-{
-    "php.validate.executablePath": "c:/php/php.exe",
-    "fiveServer.php.executable": "module.exports = { php: \"C:\\\\xampp\\\\php\\\\php.exe\"}",
-    "fiveServer.php.ini": "module.exports = { php: \"C:\\\\xampp\\\\php\\\\php.ini\"}"
-}
